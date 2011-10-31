@@ -1,4 +1,4 @@
-package br.usp.pi.hw.apps;
+package br.usp.pi.hws;
 
 import br.usp.pi.core.PGMImage;
 
