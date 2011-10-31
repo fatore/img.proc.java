@@ -1,9 +1,7 @@
 package br.usp.pi.hw.apps;
 
 import br.usp.pi.core.PGMImage;
-import br.usp.pi.filters.GaussianFilter;
-import br.usp.pi.filters.ImageFilter;
-import br.usp.pi.filters.LoGFilter;
+import br.usp.pi.filters.FrequencyFilter;
 
 public class Hw5 {
 
@@ -16,8 +14,8 @@ public class Hw5 {
 		PGMImage image = new PGMImage();
 		image.readImage(filename);
 
-		LoGFilter logFilter = new LoGFilter();
-		logFilter.applyFilter(image);
+		FrequencyFilter ff = new FrequencyFilter();
+		ff.applyFilter(image);
 
 		image.saveImage(filename + "-adj");
 
@@ -35,8 +33,8 @@ public class Hw5 {
 		PGMImage image = new PGMImage();
 		image.readImage(filename);
 
-		LoGFilter logFilter = new LoGFilter();
-		logFilter.applyFilter(image);
+		FrequencyFilter ff = new FrequencyFilter();
+		ff.applyFilter(image);
 
 		image.saveImage(filename + "-adj");
 		
